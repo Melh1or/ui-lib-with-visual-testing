@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test:visual": "loki test"
   },
   "dependencies": {
     "clsx": "^2.1.1",
