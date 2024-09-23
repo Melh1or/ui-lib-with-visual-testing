@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test:visual": "loki test"
+    "test:visual": "loki test",
+    "visual:report:json": "node scripts/generate-visual-json-report.js",
+    "visual:report:html": "reg-cli --from .loki/report.json --report .loki/report.html"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -38,6 +40,7 @@
     "eslint-plugin-storybook": "^0.8.0",
     "globals": "^15.9.0",
     "loki": "^0.35.0",
+    "reg-cli": "^0.18.7",
     "sass": "^1.77.8",
     "storybook": "^8.2.9",
     "typescript": "^5.5.3",
